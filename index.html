@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soy Serenity</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soy Serenity</title>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CDN -->
+</head>
+<body class="bg-white">
+
+  <header class="text-center mb-10">
+    <h1 class="text-4xl font-bold text-gray-800 mb-2">Soy Serenity</h1>
+    <p class="text-lg text-gray-600">100% Soy Candles & Wax Melts</p>
+  </header>
+
+  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <!-- Product Cards -->
+    <div class="card bg-purple-100 shadow-lg rounded-2xl">
+      <div class="card-content p-4 flex flex-col items-center text-center">
+        <img src="images/lavender-candle.jpg" alt="Lavender Bliss Candle" class="rounded-xl object-cover mb-4" width="150" height="150">
+        <h2 class="text-xl font-semibold text-gray-800">Lavender Bliss</h2>
+        <p class="text-gray-600">Candle</p>
+        <p class="text-lg font-bold text-gray-800 mt-2">$7</p>
+        <button class="mt-4 w-full bg-blue-500 text-white p-2 rounded">Add to Cart</button>
+      </div>
+    </div>
+    <!-- Repeat for other products -->
+  </section>
+
+</body>
 </html>
